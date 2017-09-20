@@ -1,0 +1,102 @@
+/* FONTS */
+@font-face {
+    font-family: "Oswald";
+    font-style: normal;
+    src: url("../fonts/Oswald-Regular.WOFF") format("woff")
+}
+
+@font-face {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: bold;
+    src: url("../fonts/Oswald-Bold.WOFF") format("woff")
+}
+@font-face {
+    font-family: "Ubuntu";
+    font-style: normal;
+    src: url("../fonts/Ubuntu-Regular.WOFF") format("woff")
+}
+@font-face {
+    font-family: "Ubuntu";
+    font-style: normal;
+    font-weight: bold;
+    src: url("../fonts/Ubuntu-Bold.WOFF") format("woff")
+}
+@font-face {
+    font-family: "Ubuntu";
+    font-style: italic;
+    src: url("../fonts/Ubuntu-Italic.WOFF") format("woff")
+}
+
+/* COLORS */
+.main_section01 {
+	background-color: rgba(255,220,85,1);
+}
+.main_section02 {
+	background-color: rgba(255,255,255,1);	
+}
+
+/* BUTTONS and NAVBAR*/
+.navbar_links li{
+
+	display: inline-block;
+	list-style-type: none;
+	margin-left: 5px;
+	margin-right: 5px;
+
+}
+.navbar_links a{
+
+	/*background-color: #FFFA60;*/
+	border-bottom: 10px solid #111111;
+	/*border-radius: 0px 0px 35px 35px;*/
+	padding: 5px 15px 5px 15px;
+
+
+}
+.navbar_links a{
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.5em;
+}
+.navbar_links a:link, a:visited{
+	color: #000000;
+}
+.navbar_links a:hover{
+	background-color:#FFFFFF;
+}
+.navbar_links a:active{
+	color: #FFFFFF;
+	background-color:#000000;
+}
+
+/* MISC */
+p {
+	text-indent: 3.5em
+}
+.main_body{
+	margin: 0px;
+}
+.section01_header h1{
+	font-weight: normal;
+	font-family: "Oswald";
+	font-size: 2.2em;
+	text-align: center;
+	width: 50%;
+	margin: auto;
+}
+.section01_header h1::first-letter{
+	font-weight: bold;
+	font-family: "Oswald";
+	font-size: 2.5em;
+	vertical-align: sub;
+	text-shadow: 3px 5px rgba(0,0,0,0.5);
+}
+.main_section01 {
+	min-height: 600px;
+	font-family: "Ubuntu";
+}
+.main_section02 {
+	min-height: 400px;
+	font-family: "Ubuntu";
+}
