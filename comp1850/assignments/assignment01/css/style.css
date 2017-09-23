@@ -29,29 +29,65 @@
 }
 
 /* COLORS */
-.main_section01 {
+
+.dark_yellow{
+	color: rgba(155,120,45,1);
+}
+.dark_red{
+	color: rgba(155,30,30,1);
+}
+
+#index_section01 {
 	background-color: rgba(255,220,85,1);
 }
-.main_section02 {
+#index_section02 {
 	background-color: rgba(255,255,255,1);	
 }
 
+/* MISC */
+
+/*Class selector*/
+.index_body{
+	margin: 0px;
+}
+.float_left{
+	float: left;
+}
+.float_right{
+	float: right;
+}
+
+.info_table{
+	border-collapse: collapse;
+}
+.info_table th{
+	background-color: #555555;
+	color: #FFFFFF;
+	text-align: center;
+}
+.info_table td,th{
+	padding:2px 5px 2px 5px;
+	border:1px solid black;
+}
 /* BUTTONS and NAVBAR*/
 .navbar_links li{
 
+	min-width: 200px;
+	height: 58px;
 	display: inline-block;
 	list-style-type: none;
 	margin-left: 5px;
 	margin-right: 5px;
+	text-align: center;
 
 }
 .navbar_links a{
 
 	/*background-color: #FFFA60;*/
 	border-bottom: 10px solid #111111;
+
 	/*border-radius: 0px 0px 35px 35px;*/
 	padding: 5px 15px 5px 15px;
-
 
 }
 .navbar_links a{
@@ -65,19 +101,40 @@
 .navbar_links a:hover{
 	background-color:#FFFFFF;
 }
+.navbar_links a:hover > .link_marker{
+	display: inline;
+}
 .navbar_links a:active{
-	color: #FFFFFF;
-	background-color:#000000;
+	color: #999999;
+	/*color: #FFFFFF;
+	background-color:#000000;*/
+}
+.link_marker{
+	display: none;
+	float: left;
+    top: -58px;
+    position: relative;
+}
+.link_underline{
+	display: inline;
+	float: left;
+    top: 0px;
+    margin-left: 25px;
+    position: relative;
 }
 
-/* MISC */
-p {
-	text-indent: 3.5em
+/*************INDEX SECTION 01****************/
+
+/*ID selector*/
+
+#index_section01 {
+	min-height: 600px;
+	font-family: "Ubuntu";
 }
-.main_body{
-	margin: 0px;
+#index_section01_title{
+	margin-bottom: 20px;
 }
-.section01_header h1{
+#index_section01_title h1{
 	font-weight: normal;
 	font-family: "Oswald";
 	font-size: 2.2em;
@@ -85,18 +142,83 @@ p {
 	width: 50%;
 	margin: auto;
 }
-.section01_header h1::first-letter{
+#index_section01_title h1::first-letter{
 	font-weight: bold;
 	font-family: "Oswald";
 	font-size: 2.5em;
 	vertical-align: sub;
 	text-shadow: 3px 5px rgba(0,0,0,0.5);
 }
-.main_section01 {
-	min-height: 600px;
-	font-family: "Ubuntu";
+#index_section01_content{
+	display: block;
+	margin-bottom: 50px;
 }
-.main_section02 {
+#index_section01_logos{
+	text-align: center;
+	margin-bottom: 50px;
+}
+#index_section01_about{
+	width: 50%;
+	padding: 5px 10px 5px 10px;
+	border-top: 4px solid #111111;
+	border-right: 10px solid #111111;
+	border-bottom: 4px solid #111111;
+	border-left: 10px solid #111111;
+	margin: auto;
+}
+#index_section01_nav{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+/*************INDEX SECTION 02****************/
+
+/*ID selector*/
+
+#index_section02 {
+	padding: 20px 10px 20px 10px;
 	min-height: 400px;
 	font-family: "Ubuntu";
 }
+
+#index_section02_title{
+	text-align: center;
+}
+
+/*Class selectors*/
+.tag_tutorial {
+
+	font-size: 1.2em;
+	background-color: #F1F1F1;
+	padding: 5px 10px 5px 10px;
+	border-top: 2px solid #919191;
+	border-right: 2px solid #D0D0D0;
+	border-bottom: 2px solid #919191;
+	border-left: 2px solid #D0D0D0;
+	margin: auto;
+
+}
+.tag_tutorial p{
+	margin-top: 30px;
+	margin-bottom: 30px; 
+}
+.example{
+	margin-bottom: 20px;
+	min-height: 200px;
+}
+.example > .code_example{
+	border: 1px dashed #919191;
+	padding: 10px 5px 10px 5px;
+	background-color: #FFFFFF;
+	width: 60%;
+	float: left;
+}
+.example > .example_result{
+	text-align: center;
+	width: 38%;
+	height: inherit;
+	float: right;
+	background-color: #F1F1F1;
+}
+
+

@@ -1,44 +1,117 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-	<meta charset="utf-8" />
-	<link rel="stylesheet" href="css/style.css" />
-</head>
-<body class="main_body">
-	<!-- First section of MAIN PAGE -->
-	<div id="main_section01" class="main_section01">
-		<!-- Head and title -->
-		<header class="section01_header"><h1>Welcome to Gustavo's Comp1850 Web page</h1></header>
+<html lang="en">
+	<head>
+		<title>Gustavo Guimaraes - Comp 1850 - Assignments Page</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body class="index_body">
+		<!-- First section of MAIN PAGE -->
+		<div id="index_section01">
+			<!-- Head and title -->
+			<div id="index_section01_title"><h1>Welcome to Gustavo's Comp1850 Web page</h1></div>
 
-		<!-- Main content of the section 01 -->
-		<content>
-			<div id="images_section">
-				<img src="" alt="Gustavo Guimaraes photo">
-				<img src="" alt="BCIT Logo and COMP1850 label">
-				<img src="" alt="HTML5 and CSS3 Logos">
+			<!-- Main content of the section 01 -->
+			<div id="index_section01_content">
+				<div id="index_section01_logos" class="images_section">
+					<img src="images/gustavo-guimaraes.png" alt="Gustavo Guimaraes photo">
+					<img src="images/plus-signal.png" alt="plus">
+					<img src="images/bcit-logo-250.png" alt="BCIT Logo and COMP1850 label">
+					<img src="images/equals-signal.png" alt="equal">
+					<img src="images/html-css-logo2.png" alt="HTML5 and CSS3 Logos">
+				</div>
+				<div id="index_section01_about">
+					<h2>About Me!</h2>
+					<p>Hello! My name is Gustavo. I'm from Brazil and I'm a software developer. I have experience with technologies such as Java, Javascript, html and CSS. I decided to take the "Applied Web Development" program because I want to acquire more specialized skills for Web Development. Here you can find assignments, exercises and other stuffs regard to my COMP course's studies.</p>
+				</div>
 			</div>
-			<div id="about_section">
-				<p>Hello! My name is Gustavo. I'm from Brazil and I'm a software developer. I have experience with technologies such as Java, Javascript, html and CSS. I decided to take the "Applied Web Development" program because I want to acquire more specialized skills for Web Development. Here you can find assignment, exercises and other stuffs regard to my COMP course's studies.</p>
+			<div id="index_section01_nav">
+				<ul id="links_section" class="navbar_links">
+					<li>
+						<a href="#">Link1</a>
+					</li>
+					<li>
+						<a href="#">Link2</a>
+					</li>
+					<li>
+						<a href="#section02_title_anc">HTML Mini Tutorial</a>
+					</li>
+				</ul>
 			</div>
-		</content>
-		<div class="teste"> teste </div>
-		<nav>
-			<ul id="links_section" class="navbar_links">
-				<li><a href="#">Resources</a></li>
-				<li><a href="#">Link2</a></li>
-				<li><a href="#">Tutorial</a></li>
-			</ul>
-		</nav>
-	<!-- Ending of First section of MAIN PAGE -->
-	</div>
+		<!-- Ending of First section of MAIN PAGE -->
+		</div>
 
-	<!-- Second section of MAIN PAGE (HTML tag introductions) -->
-	<div id="main_section02" class="main_section02">
+		<!-- Second section of MAIN PAGE (HTML tag introductions) -->
+		<div id="index_section02">
+			<!-- Head and title -->
+			<div id="index_section02_title"><h2><a id="section02_title_anc">&lt;NEW HTML TAGs&gt;</a></h2></div>
+			
+			<!-- Main content of the section 02 -->
+			<div id="index_section02_content">
+				<ol>
+					<li class="tag_tutorial">
+						
+						<h3>The <span class="dark_yellow">&lt;map&gt;</span> &amp; <span class="dark_yellow">&lt;area&gt;</span> tags</h3>
+						
+						<p>The <strong>&lt;map&gt;</strong> and <strong>&lt;area&gt;</strong> tags is used to create areas in a especific image. This areas can be used as normal links, like any <strong>&lt;a&gt;</strong> tag. The folloing code example shows how to use these both tags to create multiple link areas on one single image</p>
+						
+						<div class="example">
+							<div class="code_example">
+								&lt;img src="images/html-css-links.png" alt="HTML5 and CSS3 Logos" usemap="#imagemap"&gt;
+								<br>
+								<br>
+								&lt;map name="imagemap"&gt;
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&lt;area shape="rect" coords="20,48,145,185"
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alt="Html5" href="https://www.w3schools.com/html/html5_intro.asp" target="_blank"&gt;
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&lt;area shape="rect" coords="180,48,300,185" 
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alt="Css3" href="https://www.w3schools.com/css/" target="_blank"&gt;
+								<br>
+								&lt;/map&gt;
+							</div>
+							<div class="example_result">
+								<p>Click on HTML or CSS shilds to open a new page to W3C page</p>
+								<img src="images/html-css-links.png" alt="HTML5 and CSS3 Logos" usemap="#imagemap">
+								<map name="imagemap">
+								  <area shape="rect" coords="20,48,145,185" 
+								  	alt="Html5" href="https://www.w3schools.com/html/html5_intro.asp" target="_blank">
+								  <area shape="rect" coords="180,48,300,185" 
+								  	alt="Css3" href="https://www.w3schools.com/css/" target="_blank">
+								</map>
+							</div>
+						</div>
 
-	
+						<p>
+							Note that you need to reference the name of the <strong>map</strong> ("imagemap") in the attribute "usemap" inside the <strong>img</strong> tag, preciding by #. Inside the <strong>area</strong> tag you must inform the <em>shape</em> of the area and the <em>coordinates</em> following these rules:
+						</p>
+						<table class="info_table">
+							<tr>
+								<th>shape</th><th>coords</th>
+							</tr>
+							<tr>
+								<td>For value "rect"</td><td>"left border, top border, right border, bottom border"</td>
+							</tr>
+							<tr>
+								<td>For value "circ"</td><td>"centerx, centery, radius"</td>
+							</tr>
+							<tr>
+								<td>For value "poly"</td><td>"x1, y1, x2, y2,..,xn, yn"</td>
+							</tr>
+						</table>
 
-	<!-- Ending of Second section of MAIN PAGE (HTML tag introductions) -->
-	</div>
-</body>
+						<p>
+							<strong><span class="dark_red">!TIP:</span></strong> you can use a graphic design software, such as Adobe Photoshop, to identify the desired coordinates inside your image.
+						</p>
+
+					</li>
+				</ol>
+			</div>
+			
+
+		<!-- Ending of Second section of MAIN PAGE (HTML tag introductions) -->
+		</div>
+	</body>
 </html>
