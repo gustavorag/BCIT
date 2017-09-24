@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Tutorial</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="../css/style.css" />
+	<link rel="stylesheet" href="../css/css-tutorial.css" />
+</head>
+<body class="tutorial_body">
+	<div class="sub_page_header">
+		<div class="sub_page_header_left">
+			<a href="../index.html"><img src="../images/button-back-150.png"></a>	
+		</div>
+		<div class="sub_page_header_center">
+			<h1>CSS Tutorial</h1>	
+		</div>
+		<div class="sub_page_header_right">
+			<img src="../images/css3-logo.png">
+		</div>
+	</div>
+	<div class="sub_page_content">
+		<div class="sub_page_content_left">
+			<h3 class="align_center">Content</h3>
+			<ul>
+				<li>Applying Styles to descendants tags</li>
+			</ul>
+		</div>
+		<div class="sub_page_content_center">
+			<h2 class="align_center">Applying Styles to descendants tags</h2>
+			<div>
+				<h3 class="font_1-5 float_left">What will be shown</h3>
+				<img class="float_left" src="../images/arrow-right.png">
+				<div class="li_code_example display_inline_block">
+					<ul class="rounded_menu">
+						<li><a href="#"><span>&#9745;</span>Button1</a></li>
+						<li><a href="#"><span>&#9749;</span>Button2</a></li>
+						<li><a href="#"><span>&#9919;</span>Button3</a></li>
+					</ul>
+				</div>
+			</div>
+			<br>
+			<p>
+				CSS Styles can be applyed to html tags, ids and classes in many different ways. Not only directly to the element but also combine syntaxes to apply styles to descendants elements. For instance, suppose that you want to create a unsorted list (<strong>&lt;ul&gt;</strong>) and want to change the style of all itens (descendants) inside this list. What we want to do is to make all itens rounded, remove de underline and change the color of the <strong>&lt;a&gt;</strong> tag and add some icons.
+			</p>
+			<div class="examples">
+				<ol>
+					<li class="li_examples">
+						We can do this by creating classes and applying them to respective tags:
+						<div class="li_code_example">
+							&lt;ul>
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="my_listitem"&gt;
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" class="my_listitem_anchor"&gt;
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="my_listitem_span"&gt;&amp;#9745;&lt;/span&gt;
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Button1
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="my_listitem"&gt;
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" class="my_listitem_anchor"&gt;
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="my_listitem_span"&gt;&amp;#9749;&lt;/span&gt;
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Button2
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="my_listitem"&gt;
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" class="my_listitem_anchor"&gt;
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="my_listitem_span"&gt;&amp;#9919;&lt;/span&gt;
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Button3
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;
+							<br>&lt;/ul&gt;
+						</div>
+					</li>
+					<br>					
+					<li class="li_examples">
+						Getting the result:
+						<div class="li_result_example">
+						<ul>
+							<li class="my_listitem">
+								<a class="my_listitem_anchor" href="#">
+									<span class="my_listitem_span" >&#9745;</span>
+									Button1
+								</a>
+							</li>
+							<li class="my_listitem">
+								<a class="my_listitem_anchor" href="#">
+									<span class="my_listitem_span">&#9749;</span>
+									Button2
+								</a>
+							</li>
+							<li class="my_listitem">
+								<a class="my_listitem_anchor" href="#">
+									<span class="my_listitem_span">&#9919;</span>
+									Button3
+								</a>
+							</li>
+						</ul>
+					</div>
+					</li>
+				</ol>
+			</div>
+			<br><br><br><br>
+			<p>Or we can use the css capability to apply styles to descendants elements of a tag that has a specific class. To do this we should use the following notation: <strong>.class tagname</strong></p>
+			<div class="examples">
+				<ol>
+					<li class="li_examples">
+						Defining a class that affect descendants tags.
+						<div class="li_css_example">
+							.rounded_menu li{
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;list-style-type: none;
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;margin-left: 5px;
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;margin-right: 5px;
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;border: 2px solid #DDDDDD;
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;border-radius: 50px;
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;width: 100px;
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;height: 100px;
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;float: left;
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;text-align: center;
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;background-color: #EEEEEE;
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;color: #BBBBBB;
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;cursor:pointer;
+							<br>}
+						</div>
+					</li>
+					<br>					
+					</li>
+				</ol>
+			</div>
+			<p>It means that every <strong>&lt;li&gt;</strong> tag inside an element that has the "rounded_menu" class will have these defined styles. The syntax ".className tagName" can be also combined with pseudo class and other descendants tags. Take a look on this other example:</p>
+			<div class="examples">
+				<ol>
+					<li class="li_examples">
+						<div class="li_css_example">
+							.rounded_menu li:hover{
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;border: 2px solid #555555;
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;color: #555555;
+							<br>}
+						</div>
+					</li>
+					<li class="li_examples">
+						<div class="li_css_example">
+							.rounded_menu li:hover a{
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;color: #555555;
+							<br>}
+						</div>
+					</li>
+					<li class="li_examples">
+						<div class="li_css_example">
+							.rounded_menu li:hover span{
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;transform: scale(1.5);
+							<br>}
+						</div>
+					</li>
+					<br>					
+					</li>
+				</ol>
+			</div>
+			<p>Realize that the "hover" condition is triggered when the mouse is over the <strong>&lt;li&gt;</strong> tag (li:hover) but for each of these css definitions the resulting style is applied in different ways. The style 1 will be put on <strong>&lt;li&gt;</strong> tags inside the elemente with de "rounded_menu" class but the styles 2 and 3 will be applied to the <strong>&lt;a&gt;</strong> tags and <strong>&lt;span&gt;</strong> tags, respectivily, that are inside this especifically <strong>&lt;li&gt;</strong> tag. We can interprete the notation, ".rounded_menu li:hover span" in this way: For a <strong>&lt;li&gt;</strong> tag inside an element with class .rounded_menu and having the mouse over itself, apply the following styles to every <strong>&lt;span&gt;</strong> descendants tag of this <strong>&lt;li&gt;</strong> tag. In this way, you don't need to apply classes to every item inside the list. You can see the results next.</p>
+			<br>
+			<div class="examples">
+				<ol>
+					<li class="li_examples">
+						CSS Definitions
+						<div class="li_css_example">
+							.rounded_menu{
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;height: 100px;
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;text-align: center;
+							<br>}
+							<br>
+							.rounded_menu li{
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;list-style-type: none;
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;margin-left: 5px;
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;margin-right: 5px;
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;border: 2px solid #DDDDDD;
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;border-radius: 50px;
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;width: 100px;
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;height: 100px;
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;float: left;
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;text-align: center;
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;background-color: #EEEEEE;
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;color: #BBBBBB;
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;cursor:pointer;
+							<br>}					
+							<br>.rounded_menu span{
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;display: block;
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;width: 100px;
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;height: 60px;
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;line-height: 60px;
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;font-size: 1.5em;
+							}
+							<br>
+							<br>.rounded_menu a{
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;text-decoration: none;
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;color: #BBBBBB;
+							<br>}
+							<br>
+							<br>.rounded_menu li:hover{
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;border: 2px solid #555555;
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;color: #555555;
+							<br>}
+							<br>
+							<br>.rounded_menu li:hover a{
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;color: #555555;
+							<br>}
+							<br>.rounded_menu li:hover span{
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;transform: scale(1.5);
+							<br>}
+						</div>
+					</li>
+					<br>					
+					<li class="li_examples">
+						HTML definitions
+						<div class="li_code_example">
+							<br>&lt;ul class="rounded_menu">
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;&lt;span&gt;&amp;#9745;&lt;/span&gt;Button1&lt;/a&gt;&lt;/li&gt;
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;&lt;span&gt;&amp;#9749;&lt;/span&gt;Button2&lt;/a&gt;&lt;/li&gt;
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;&lt;span&gt;&amp;#9919;&lt;/span&gt;Button3&lt;/a&gt;&lt;/li&gt;
+							<br>&lt;/ul&gt;
+						</div>
+					</li>
+					<li class="li_examples">
+						Result
+						<div class="li_code_example">
+							<ul class="rounded_menu">
+								<li><a href="#"><span>&#9745;</span>Button1</a></li>
+								<li><a href="#"><span>&#9749;</span>Button2</a></li>
+								<li><a href="#"><span>&#9919;</span>Button3</a></li>
+							</ul>
+						</div>
+					</li>
+				</ol>
+			</div>
+		</div>
+		<div class="sub_page_content_right">
+			<h3 class="align_center">Fonts used for this tutorial:</h3>
+			<ul>
+				<li><a href="https://www.w3schools.com/cssref/css_selectors.asp" target="_blank">W3C Css Selectors</a></li>
+				<li><a href="https://www.w3schools.com/html/html_symbols.asp" target="_blank">W3C Css Symbols</a></li>
+				<li><a href="https://www.w3schools.com/css/css3_2dtransforms.asp" target="_blank">W3C Css Transforms</a></li>
+				<li><a href="https://www.sitepoint.com/css-selectors/" target="_blank">Site Point: Introducing CSS Selectors</a></li>
+			</ul>
+		</div>
+	</div>
+	
+</body>
+</html>

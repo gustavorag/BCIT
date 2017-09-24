@@ -1,0 +1,90 @@
+/*CSS TUTORIAL*/
+/* Extracted from 
+* - https://tympanus.net/codrops/2011/10/24/creative-css3-animation-menus/
+* - https://tympanus.net/codrops/2011/11/02/original-hover-effects-with-css3/
+* - https://www.w3schools.com/css/css3_2dtransforms.asp
+* - https://www.w3schools.com/css/css3_animations.asp
+*/
+.my_listitem{
+	
+	list-style-type: none;
+	
+	margin-left: 5px;
+	margin-right: 5px;
+	border: 2px solid #191919;
+	border-radius: 50px;
+	width: 100px;
+	height: 100px;
+	float: left;
+
+	text-align: center;
+	background-color: #EEEEEE;
+	color: #191919;
+	
+	cursor:pointer;
+}
+.my_listitem_anchor{
+	text-decoration: none;
+	color: #191919;
+}
+.my_listitem_span{
+	display: block;
+	width: 100px;
+	height: 60px;
+	line-height: 60px;
+	font-size: 1.5em;
+}
+.rounded_menu{
+	min-height: 100px;
+	text-align: center;
+}
+.rounded_menu li{
+	list-style-type: none;
+	margin-left: 5px;
+	margin-right: 5px;
+	border: 2px solid #DDDDDD;
+	border-radius: 50px;
+	width: 100px;
+	height: 100px;
+	float: left;
+	text-align: center;
+	background-color: #EEEEEE;
+	color: #BBBBBB;
+	cursor:pointer;
+}
+
+.rounded_menu span{
+	display: block;
+	width: 100px;
+	height: 60px;
+	line-height: 60px;
+	font-size: 1.5em;
+}
+
+.rounded_menu a{
+	text-decoration: none;
+	color: #BBBBBB;
+}
+
+.rounded_menu li:hover{
+	border: 2px solid #555555;
+}
+
+.rounded_menu li:hover a{
+	color: #775555;
+	font-weight: bold;
+}
+.rounded_menu li:hover span{
+	transform: scale(1.5);
+	font-weight: normal;
+	color: #555555;
+}
+
+.rounded_menu_big li{
+	width: 150px;
+	height: 150px;
+	border-radius: 100px;
+}
+.rounded_menu_big span{
+	width: 150px;
+}

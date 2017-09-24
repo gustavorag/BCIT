@@ -37,7 +37,7 @@
 	color: rgba(155,30,30,1);
 }
 
-#index_section01 {
+#index_section01 , .sub_page_header{
 	background-color: rgba(255,220,85,1);
 }
 #index_section02 {
@@ -50,13 +50,29 @@
 .index_body{
 	margin: 0px;
 }
+.tutorial_body{
+	margin: 0px;
+	height: 90%;
+	font-size: 1.2em;
+}
 .float_left{
 	float: left;
 }
 .float_right{
 	float: right;
 }
-
+.font_1-5{
+	font-size: 1.5em;
+}
+.align_center{
+	text-align: center;
+}
+.display_inline{
+	display: inline;
+}
+.display_inline_block{
+	display: inline-block;
+}
 .info_table{
 	border-collapse: collapse;
 }
@@ -70,6 +86,7 @@
 	border:1px solid black;
 }
 /* BUTTONS and NAVBAR*/
+
 .navbar_links li{
 
 	min-width: 200px;
@@ -206,19 +223,90 @@
 	margin-bottom: 20px;
 	min-height: 200px;
 }
-.example > .code_example{
+.code_example{
 	border: 1px dashed #919191;
 	padding: 10px 5px 10px 5px;
 	background-color: #FFFFFF;
 	width: 60%;
 	float: left;
 }
-.example > .example_result{
+.example_result{
 	text-align: center;
 	width: 38%;
-	height: inherit;
 	float: right;
 	background-color: #F1F1F1;
 }
 
+/************ Sub Page Content ***************/
+.sub_page_header{
+	width: 100%;
+	height: 180px;
+	line-height: 120px;
+	padding-left: 5%;
+	padding-top: 15px;
+}
+.sub_page_header_left{
+	width: 15%;
+	height: inherit;
+	float: left;
+}
+.sub_page_header_center{
+	width: 60%;
+	height: inherit;
+	float: left;
+	text-align: center;
+}
+.sub_page_header_right{
+	width: 15%;
+	height: inherit;
+	float: left;
+	text-align: right;
+}
+.sub_page_content{
+	min-height: 200px;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.sub_page_content_left{
+	min-height: 200px;
+	width: 20%;
+	float: left;
+}
+.sub_page_content_center{
+	min-height: 200px;
+	width: 60%;
+	float: left;
+	padding: 10px 20px 10px 20px;
+}
+.sub_page_content_right{
+	min-height: 200px;
+	width: 15%;
+	float: left;
+}
 
+
+/*************TUTORIAL CONTENT****************/
+
+/*ID selectors*/
+
+/*Class selectors*/
+.li_examples{
+	width: 45%;
+	margin-right: auto;
+	margin-left: auto;
+}
+.li_css_example, .li_code_example{
+	border: 1px dashed #919191;
+	padding: 10px 5px 10px 5px;
+	background-color: #DFDFDF;
+	color: #2299BB;
+	font-size: 0.9em;
+}
+.li_code_example{
+	color: #22BB99;
+}
+.li_result_example{
+	text-align: center;
+	background-color: #F1F1F1;
+}
