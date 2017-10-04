@@ -1,0 +1,134 @@
+/*TAG selectors*/
+body {
+	margin: 0px;
+}
+/*ID selectors*/
+
+#wrapper{
+	background-color: #2196F3;
+	position: relative;
+}
+
+#header{
+	background-color: #2196F3;
+	height: 100px;
+}
+#header h1{
+	margin: 0px;
+	padding: 20px;
+	text-align: center;
+}
+
+#nav{
+	background-color: #1E88E5;	
+	width: 100%;
+	height: 60px;
+	/*line-height: 60px;*/
+	text-align: center;
+}
+/*Modifying UL and LI elements inside the navbar - BEGIN*/
+#nav ul{
+	list-style-type: none;
+	height: inherit;
+	margin: 0px;
+	padding: 0px;
+}
+#nav li{
+	display: inline-block;
+	padding-left: 25px;
+	padding-right: 25px;
+	margin-left: 25px;
+	margin-right: 25px;
+	height: inherit;
+	line-height: 55px;
+	cursor: pointer;
+}
+#nav li:hover{
+	background-color: #BBDEFB;
+}
+#nav li a{
+	color:#FFFFFF;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.5em;
+	cursor: inherit;
+}
+#nav li:hover a{
+	color: #0D47A1;
+}
+/*Modifying UL and LI elements inside the navbar - END*/
+
+#content{
+	background-color: #E3F2FD;
+	margin-right: 280px;
+	margin-left: 20px;
+	min-height: 340px;
+	padding:10px 20px 10px 20px;
+}
+#sideNews{
+	color: #232323;
+	padding: 5px 10px 5px 10px;
+	/*shapes*/
+	width: 220px;
+	min-height: 300px;
+	max-height: 300px;
+	/*Positioning*/
+	position: fixed;
+	right: 20px;
+	top: 180px;
+}
+/*Modifying elements inside the Side news Section - BEGIN*/
+#sideNews h3{
+	color: #FFFFFF;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+#sideNews ul{
+	list-style-type: none;
+	padding-left: 0px;
+	margin: 0px;
+	margin-top: 3px;
+}
+#sideNews .news h3{
+	text-transform: uppercase;
+	margin-top: 0px;
+	margin-bottom: 2px;
+	padding-left: 2px;
+	background-color: #2196F3;
+	color: #FFFFFF;
+}
+/*Modifying elements inside the Side news Section - END*/
+#footer{
+	background-color: #1A237E;
+	color: #FFFFFF;
+	height: 70px;
+	width: 100%;
+	text-align: center;
+	line-height: 70px;
+}
+
+/*Class selectors*/
+/*Class to revome margins*/
+.no_margins{
+	margin: 0px;
+}
+.news{
+	background-color: #E3F2FD;
+	border:1px solid #222222;
+	padding: 5px;
+	margin-bottom: 5px;
+}
+.news a{
+	color: #222255;
+}
+/*Modifying the selected link to differ from others*/
+.nav_selected_link{
+	background-color: #E3F2FD;
+	color:#1E88E5;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+

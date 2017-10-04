@@ -64,14 +64,24 @@
 .font_1-5{
 	font-size: 1.5em;
 }
+.font_2-0{
+	font-size: 2.0em;
+}
 .align_center{
 	text-align: center;
+}
+.display_block{
+	display: block;
 }
 .display_inline{
 	display: inline;
 }
 .display_inline_block{
 	display: inline-block;
+}
+.no_undeline_link{
+	text-decoration: none;
+	color: #000000;
 }
 .info_table{
 	border-collapse: collapse;
@@ -284,7 +294,10 @@
 	width: 15%;
 	float: left;
 }
-
+.proposal_ol p{
+	padding: 20px 20px 20px 20px;
+	border: 1px solid #AAAAAA;
+}	
 
 /*************TUTORIAL CONTENT****************/
 
