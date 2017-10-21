@@ -1,0 +1,410 @@
+/* Main css file for COMP1850 Final Project */
+
+/* FONTS */
+@font-face {
+    font-family: "Anton";
+    font-style: normal;
+    src: url("../fonts/Anton-Regular.WOFF") format("woff")
+} 
+@font-face {
+    font-family: "Pacifico";
+    font-style: normal;
+    src: url("../fonts/Pacifico-Regular.WOFF") format("woff")
+}
+@font-face {
+    font-family: "PermanentMarker";
+    font-style: normal;
+    src: url("../fonts/PermanentMarker-Regular.WOFF") format("woff")
+}
+
+@font-face {
+    font-family: "RobotoCondensed";
+    font-style: normal;
+    src: url("../fonts/RobotoCondensed-Regular.WOFF") format("woff")
+}
+@font-face {
+    font-family: "RobotoCondensed";
+    font-style: normal;
+    font-weight: bold;
+    src: url("../fonts/RobotoCondensed-Bold.WOFF") format("woff")
+}
+@font-face {
+    font-family: "RobotoCondensed";
+    font-style: italic;
+    src: url("../fonts/RobotoCondensed-Italic.WOFF") format("woff")
+}
+@font-face {
+    font-family: "RobotoCondensed";
+    font-style: italic;
+    font-weight: bold;
+    src: url("../fonts/RobotoCondensed-BoldItalic.WOFF") format("woff")
+}
+@font-face {
+    font-family: "IndieFlower";
+    font-style: italic;
+    font-weight: bold;
+    src: url("../fonts/IndieFlower.WOFF") format("woff")
+}
+
+/*Z-Index levels*/
+.carousel-gallery{
+    z-index: 9999;
+}
+#logo{
+    z-index: 9998;
+}
+
+
+/* ------------------- Tag selectors ------------------- */
+body{
+    margin: 0px;
+    background-color: #f2f2f2;
+    font-family: "RobotoCondensed";
+}
+/* ------------------- ID selectors ------------------- */
+#wrapper{
+    margin: 0px;
+    position: relative;
+    background-color: #f2f2f2;
+    background-position: 0px 0px;
+}
+#header{
+
+}
+#content, #wellcomeContent{
+    /*layout*/
+    display: block;
+    max-width: 1024px;
+    min-height: 568px;
+    margin-left: auto;
+    margin-right: auto;
+    /*design*/
+    background-color: #ffffff;
+}
+#wellcomeContent{
+    height: 568px;
+    background-image: url(../images/main-background-1024-568.jpg);
+}
+#socialBar{
+    height: 40px;
+    padding-top: 10px;
+    background-color: #33657a;
+    text-align: right;
+}
+#socialBar a{
+    margin: 0px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+#navBar{
+    height: 150px;
+    background-color: #0ca4a5;
+    position: relative;
+}
+#logo{
+    display: inline-block;
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    top:15px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+#logo img{
+   cursor: pointer; 
+}
+#title{
+    display: inline-block;
+    position: absolute;
+    margin: 0px;
+    left: 0px;
+    width: 100%;
+
+    text-align: center;
+    color: #ffffff;
+    font-family: "IndieFlower";
+    font-weight: bold;
+}
+#navMenu{
+    font-family: "IndieFlower";
+    display: inline-block;
+    position: absolute;
+    right:50px;
+    top: 105px;
+    margin:0px;
+    padding-bottom: 10px;
+}
+#navMenu li{
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 10px;
+}
+#navMenu a{
+    cursor:pointer;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #ffffff;
+    padding: 10px 15px 10px 15px;
+}
+#navMenu a:hover, .menu-hover{
+    color: #f0f0f0;
+    text-shadow: 2px 2px 5px #003366;
+    background-color: #63a8bf;
+}
+/* ------------------- Class selectors ------------------- */
+.first-letter{
+    font-size: 1.8em;
+}
+.social-bar-content, .nav-bar-content{
+    height: inherit;
+    position: relative;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.social-bar-content{
+    padding-right: 20px;
+}
+.social-bar-content a{
+    cursor:pointer;
+}
+.facebook-button{
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    background-image: url(../images/facebook-35.png);
+}
+.instagram-button{
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    background-image: url(../images/instagram-35.png);
+}
+.linkedin-button{
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    background-image: url(../images/linkedin-35.png);
+}
+.facebook-button:hover{
+    background-image: url(../images/facebook-hover-35.png);
+}
+.instagram-button:hover{
+    background-image: url(../images/instagram-hover-35.png);
+}
+.linkedin-button:hover{
+    background-image: url(../images/linkedin-hover-35.png);
+}
+.sub-menu{
+    display: inline-block;
+    width: 100%;
+    min-height: 60px;
+    position: absolute;
+    top:150px;
+    left: 0px;
+    background-color: #63a8bf;
+
+    text-align: center;
+}
+.sub-menu-nav li{
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 20px;
+}
+.sub-menu-nav a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.sub-menu-nav a:hover{
+    text-decoration: underline;
+}
+.selected-menu{
+    color: #f0f0f0;
+    text-shadow: 2px 2px 5px #003366;
+    background-color: #33657a;
+    border-top: 1px solid #222222;
+    border-left: 1px solid #222222;
+    border-right: 1px solid #222222;
+}
+.wellcome-content-box{
+    position: relative;
+    top:150px;
+    border-radius: 25px;
+
+    font-size: 1.5em;
+    text-align:center;
+    color: #ffffff;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(15,15,15,0.7);
+}
+.hand-writing-title{
+    margin: 0px;
+    font-size: 2em;
+    font-family: "PermanentMarker";
+
+}
+
+/*Contents*/
+.content-main{
+    padding:20px;
+}
+.content-main h2{
+    color: #0ca4a5;
+    font-family: "IndieFlower";
+}
+.content-main h3{
+    color: #ffffff;
+    font-family: "IndieFlower";
+    padding-left: 20px;
+    background-image: url(../images/titlebar01.png);
+    clear: both;
+}
+.content-main p::first-letter {
+    font-size: 1.4em;
+    font-weight: bold;
+} 
+.paragraph-img{
+    border: solid 1px #33657a;
+    float: left;
+    position: relative;
+    margin: 15px;
+    margin-right: 25px; 
+    width: 300px;
+    height: 220px;
+    cursor: pointer;
+}
+.paragraph-img img{
+    position: absolute;
+    top: 0px;
+}
+.paragraph-img legend{
+    position: absolute;
+    bottom: 0px;
+    width: inherit;
+    text-align:center;
+    font-size: 0.8em;
+}
+.img-gallery legend:after{
+     content: " (click to see the gallery)"
+}
+
+/*Carousel*/
+.carousel-gallery{
+    position: fixed;
+    top:0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    display: none;
+    text-align: center;
+    padding-top: 100px;
+}
+.carousel-content{
+    display: inline-block;
+    position: relative;
+    background-color: #000000;
+    padding: 15px;
+    padding-left: 55px;
+    padding-right: 55px;
+}
+.carousel-content legend{
+    color: #ffffff;
+    margin-top: 10px;
+}
+.carousel-img{
+    display: inline-block;
+    border: 5px solid #ffffff;
+
+}
+.carousel-back, .carousel-next{
+    
+    display: inline-block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+
+    font-size: 2em;
+    background-color: rgba(51,101,122,0.5);
+    border: 2px dotted rgba(200,200,200,0.7);
+    color: white;
+    border-radius: 25px;
+
+    cursor: pointer;
+}
+.carousel-back:hover, .carousel-next:hover{
+    background-color: rgba(51,101,122,1);
+    border: 2px solid rgba(200,200,200,1);
+}
+.carousel-back{
+    left: 5px;
+    top: 45%;
+}
+
+.carousel-back:before{
+    content:'\2039';
+    position: relative;
+    bottom: 3px;
+}
+.carousel-next{
+    right: 5px;
+    top: 45%;
+}
+.carousel-next:before{
+    content:'\203A';
+    position: relative;
+    bottom: 2px;
+}
+.carousel-close{
+    
+    display: inline-block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 10px;
+    top: 10px;
+    
+    border-radius: 25px;
+
+    background-color: rgba(229,115,115,0.5);
+    border: 1px dotted rgba(200,200,200,0.7);
+    color: white;
+    cursor: pointer;
+}
+.carousel-close:hover{
+    background-color: rgba(229,115,115,1);
+    border: 1px dotted rgba(200,200,200,1);
+}
+.carousel-close:before{
+    content: "X";
+    position: relative;
+    top: 5px;
+}
+
+/*Misc*/
+.no-margins{
+    margin: 0px;
+}
+.hidden{
+    display: none;
+}
+.float-right{
+    float: right;
+}
+.clear-both{
+    clear: both;
+}
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+.block-label{
+    display: block;
+    margin-top: 20px;
+}
+.full-text-area{
+    width: 100%;
+    min-height: 100px;
+}

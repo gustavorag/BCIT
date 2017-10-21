@@ -1,0 +1,103 @@
+/*Common*/
+body, #wrapper{
+    background-color: #DDDDDD;
+}
+legend, .block-label{
+    font-weight: bold;
+}
+/********************************** Tag Selectors ************************************/
+/*Layout*/
+body{
+    margin: 0px;
+    position: relative;
+}
+
+/********************************** ID Selectors *************************************/
+/*Layout*/
+#header{
+    background-color: #FFDC55;
+    width: 100%;
+    height: 180px;
+    line-height: 180px;
+}
+#header h1{
+    margin:0px;
+    padding: 0px;
+}
+#wrapper{
+    position: relative;
+}
+#content{
+    max-width: 960px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FDFDFD;
+}
+#courseField, #commentsField{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#courseField label{
+    margin-right: 20px;
+}
+#courseFieldContent{
+    max-width: 500px;
+}
+
+/********************************** Class Selectors **********************************/
+/*Layout*/
+.exercise05_header_left{
+    width: 20%;
+    height: inherit;
+    text-align: center;
+    float: left;
+    
+    position: relative;
+    top:20px;
+}
+.exercise05_header_center{
+    width: 60%;
+    height: inherit;
+    text-align: center;
+    float: left;
+}
+.exercise05_header_right{
+    width: 20%;
+    height: inherit;
+    float: left;
+    text-align: center;
+}
+
+/*Components*/
+.sub-content{
+    border:1px solid #aaaaaa;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+.block-label{
+    display: block;
+    margin-top: 20px;
+}
+.full-text-area{
+    width: 100%;
+    min-height: 100px;
+}
+/*Misc*/
+.no-margin_before{
+    margin-top: 0px;
+}
+.no-margin_after{
+    margin-bottom: 0px;
+}
+.break_line_before:before{
+    content:"\A"; 
+    white-space:pre; 
+}
+.break_line_after:after{ 
+    content:"\A"; 
+    white-space:pre; 
+}
+.block{
+    display: block;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!-- 
+		auth: Gustavo Rocha de Almeida Guimaraes
+		bcit-id: A01041004
+		creation-date: 2017-10-14
+		update-date: 2017-10-14
+		notes: Main page for Comp1850 Final Project
+	 -->
+	<head>
+		<title>VFS - About Vancouver</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="../../css/style.css" />
+		<script type="text/javascript" src="../../scripts/vfsscripting.js"></script>
+		<script type="text/javascript" src="../../scripts/vfs_photo_gallery.js"></script>
+	</head>
+	<body>
+		<!-- Wrapper for all body content -->
+		<div id="wrapper">
+			<div id="header">
+				<!-- Area for links to social bar -->
+				<div id="socialBar">
+					<div class="social-bar-content">
+						<a href="https://www.facebook.com/gustavo.guimaraes.940" 
+							class="facebook-button" target="_blank">
+						</a>
+						<a href="https://www.instagram.com/gustavorag/"
+							class="instagram-button" target="_blank">
+						</a>
+						<a href="https://www.linkedin.com/in/gustavo-guimaraes-softdev/"
+							class="linkedin-button" target="_blank">
+						</a>
+					</div>
+				</div>
+				<div id="navBar">
+					<div class="nav-bar-content">
+						<a id="logo" href="../../vfs_main.html"><img src="../../images/logo-120.png" alt="VFS Logo"></a>
+						<h1 id="title"><span class="first-letter">V</span>ancouver <span class="first-letter">F</span>or <span class="first-letter">S</span>tudents</h1>
+						<ul id="navMenu">
+							<li>
+								<a id="cityButton" href="../the_city.html" class="selected-menu" 
+								onmouseover="showSubMenu('subMenuTheCity')"
+								onmouseout="hideSubMenu('subMenuTheCity','cityButton')">The City</a>
+							</li>
+							<li>
+								<a id="studyButton" href="../studying.html" 
+								onmouseover="showSubMenu('subMenuStudying')"
+								onmouseout="hideSubMenu('subMenuStudying','studyButton')">Studying</a>
+							</li>
+							<li><a id="aboutButton" href="../about.html">About us</a></li>
+							<li><a id="contactButton" href="../contact.html" ">Contact</a></li>
+						</ul>
+						<div id="subMenuTheCity" class="sub-menu hidden" 
+							onmouseover="showSubMenu('subMenuTheCity','cityButton')"
+							onmouseout="hideSubMenu('subMenuTheCity','cityButton')">
+							<ul class="sub-menu-nav">
+								<li><a href="living.html">Living</a></li>
+								<li><a href="moving_around.html">Moving Around</a></li>
+							</ul>
+						</div>
+						<div id="subMenuStudying" class="sub-menu hidden"
+							onmouseover="showSubMenu('subMenuStudying','studyButton')"
+							onmouseout="hideSubMenu('subMenuStudying','studyButton')">
+							<ul class="sub-menu-nav">
+								<li><a href="../study/course_type.html">Choosing course Type</a></li>
+								<li><a href="../study/eng_schools.html">Schools for English</a></li>
+								<li><a href="../study/colleges.html">Colleges</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="content">
+				<div class="content-main">
+					<h2 class="no-margins">About Vancouver</h2>
+					<div class="topic">
+						<h3>Vancouver and Region</h3>
+						<div class="paragraph-img img-gallery" 
+							onclick="createCarouselGallery('vancouverCity','aboutVancouverGallery')">
+							<legend>Vancouver City</legend>
+							<img src="../../images/the_city/vancouver-thumb-300.jpg">
+						</div>
+						<p>
+							Vancouver is the biggest city in Britsh Columbia (BC) province. Although many people think that Vancouver is also the capital, this is not true. The capital of Britsh Columbia is Victoria, a smaller city in the Vancouver Island. The region in which Vancouver is located is known as "Lower Mainland", where about 60% of BC population lives. The is membership of a metropolis named "Metro Vancouver". It is composed of 23 members being:
+						</p>
+						<ul>
+							<li>13 Cities;</li>
+							<li>4 District municipality;</li>
+							<li>3 Villages;</li>
+							<li>1 Island municipality;</li>
+							<li>1 Indian reserve (Treaty First Nation);</li>
+							<li>1 Regional district electoral area.</li>
+						</ul>
+
+						<div class="paragraph-img img-gallery float-right clear-both"
+							onclick="createCarouselGallery('vancouverMaps','aboutVancouverGallery')">
+							<legend>Vancouver Maps</legend>
+							<img src="../../images/the_city/vancouver-map-thumb-300.jpg">
+						</div>
+						<p>
+							Vancouver is at Canadia west coast and has important rivers and inlets flowing through it. Because of this, the port business is very strong in this area (and one of most important in Canada), as well as the foresting business. 
+							Vancouver is also well-known by been a green city, both for having many trees and parks as for its policies regarding sustainability.
+						</p>
+						<h3>Vancouverites</h3>
+						<div class="paragraph-img img-gallery float-right"
+							onclick="createCarouselGallery('vancouverEthnicity','aboutVancouverGallery')">
+							<legend>Vancouver Ethnicity</legend>
+							<img src="../../images/the_city/ethnicity-thumb-300.jpg">
+
+						</div>
+						<p>
+							The city of Vancouver has about 600 thousand people while the metropolitan region has up to 2.4 million residents. These numbers make Metro Vancouver one of most density regions in Canada, with Vancouver having 5,249 people per square km.
+						</p>
+						<p>
+							The ethnic of the city is quite mixed whit about half of people having descendency or being immigrants. Because of this, Vancouver is a multicultural city, where many languages are spoken, including in government services such as 911. The largest immigrant group in the city are the Chinese.
+						</p>
+						<h3>Weather: Too much cold, too much hot?</h3>
+						<div class="paragraph-img img-gallery"
+							onclick="createCarouselGallery('vancouverWeather','aboutVancouverGallery')">
+							<legend>Vancouver Weather</legend>
+							<img src="../../images/the_city/weather-thumb-300.jpg">
+
+						</div>
+						<p>
+							Not that cool and not that hot. Vancouver is one of the most moderated cities in Canada regarding to weather. Of course, during the winter it will have some cold days, with temperatures under zero  Celsius degree and snow. But comparing to other major cities in Canada, the average temperature either in winter and summer are moderated. What you really need to care about Vancouver is the raining. Not wonder, Vancouver is also known as "Raincouver". 
+						</p>
+						<p>
+							But again, is not that bad. Vancouver "just" occupy the 9th position in the "Most raining cities in Canada". Anyway, it is better to be prepared to use some umbrellas. And remember, Vancouver is in Canada: When it said that here is not that cold it is compared with other places in Canada. It does not mean that looks like a tropical beach.
+						</p>
+						<br class="clear-both" />
+					</div>
+				</div>
+				<div id="aboutVancouverGallery" class="carousel-gallery"></div>
+				<div class="content-side"></div>
+			</div>
+		</div>
+	</body>
+</html>
