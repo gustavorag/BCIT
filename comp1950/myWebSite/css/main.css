@@ -1,0 +1,164 @@
+/*
+	Author:   Gustavo Rocha de Almeida Guimaraes 
+	Student#: A01041004
+	Date:     Jan 11, 2018
+*/
+
+/* ----------------TAG SELECTORS - BEGINNING ----------------*/
+body {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	background-color: #E7E7E7;
+	font-family: Arial;
+	color: #409010;
+}
+
+/* ----------------TAG SELECTORS - ENDING ----------------*/
+
+
+
+/* ----------------ID SELECTORS - BEGINNING ----------------*/
+#top_hr{
+	position: relative;
+	top: 240px;
+	z-index: 9999;
+}
+#wrapper{
+	position: relative;
+	max-width: 1280px;
+	min-height: 720px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 30px;
+	padding-right: 30px;
+	background-color: #E7E7E7;
+	border-left: 1px solid #D7D7D7;
+	border-right: 1px solid #D7D7D7;
+}
+#header{
+	padding-top: 20px;
+	height: 220px;
+}
+#header h1{
+	text-align: center;
+	font-family: Courier New;
+}
+#navbar{
+
+}
+#main_nav_menu{
+
+}
+#content{
+	padding-bottom: 250px;
+}
+#footer{
+	position: fixed;
+	bottom: 0px;
+	height: 250px;
+	width: 100%;
+	max-width: 1280px;
+}
+#footer_navbox{
+	position: absolute;
+	bottom: 25px;
+	height: 60px;
+	width: 80%;
+	padding-top: 30px;
+	margin-left: 10%;
+	border-radius: 25px;
+	box-shadow:0 1px 4px #D0D0D0;
+	background-color: #EDEDED;
+}
+/* ----------------ID SELECTORS - ENDING  ----------------*/
+
+
+
+/* ----------------CLASSE SELECTORS - BEGINNING ----------------*/
+.vertical_nav{
+	list-style-type: none;
+	padding: 0px 5px 0px 5px;
+	margin: 5px;
+	text-align: center;
+}
+.vertical_nav li{
+	display: inline-block;
+	height: 50px;
+	padding:5px;
+}
+.vertical_nav li:hover{
+	box-shadow: 0px 1px 4px #D0D0D0;
+}
+.vertical_nav a{
+	text-decoration: none;
+	color: #308005;
+	font-size: 1.5em;
+	padding:10px; 
+}
+
+.vertical_nav a:hover{
+	text-decoration: none;
+	color: #60B015;
+	font-size: 2em;
+	border-radius: 15px;
+	font-weight: bold;
+	color: #FFFFFF;
+	box-shadow:0px 0px 50px 1px #A0A0A0 inset;
+}
+.vertical_nav a:active {
+    color: #FFFFAF;
+	box-shadow:0px 0px 50px 1px #A0A0A0 inset;
+}
+.sub_content_box{
+	padding:19px;/* + 1px from border = 20px each side */
+	margin-top: 15px;
+	margin-bottom: 25px;
+	background-color: #FDFDFD;
+	border: 1px solid #0F0F0F
+}
+.sub_content_box h2{
+	position: relative;
+	display: inline-block;
+	top: -35px;
+	margin:0px;
+	padding: 10px;
+	padding-top: 3px;
+	border: 1px solid #0F0F0F;
+	border-radius: 5px 5px 15px 15px;
+	background-color: #E9E9E9;
+	box-shadow:2px 2px 4px 1px #A0A0A0;
+}
+.sub_content_link_box{
+	position: relative;
+	display: inline-block;
+	width: 368px; /*+ 8 margin + 30 padding + 2 border = 306 (4 box per line in max width window) */
+	height: 340px;
+	padding: 15px;
+	padding-top: 3px;
+	margin: 4px;
+	margin-bottom: 20px;
+	border: 1px solid #F1F1F1;
+	border-radius: 5px 5px 5px 5px;
+	background-color: #EDEDED;
+	box-shadow:2px 2px 4px 1px #A0A0A0;
+}
+.fade_out_20{
+	height: 20px;
+	background-color: rgba(231, 231, 231, 0.2);
+}
+.fade_out_40{
+	height: 30px;
+	background-color: rgba(231, 231, 231, 0.4);
+}
+.fade_out_80{
+	height: 40px;
+	background-color: rgba(231, 231, 231, 0.8);
+}
+.fade_out_100{
+	height: 160px;
+	background-color: rgba(231, 231, 231, 1);
+}
+/* ----------------CLASSE SELECTORS - ENDING  ----------------*/
